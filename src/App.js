@@ -1,18 +1,19 @@
 // Imports
 //////////
 import React, { Component } from 'react'; // View library
-import Cardlist from './Cardlist';        // The full Cardlist
+import Cardlist from './Cardlist';        // The full Cardlist component
+import Searchbox from './Searchbox';      // The Searchbox component
 import {robots} from './robots';          // The robots object for data
 
 // this is the view for the whole app
 class App extends Component {
     render() {
         return(
-            // return the div holding a header, searchbar & the full Cardlist 
+            // return the div holding a header, searchbox & the full Cardlist 
             // where every robot has its own Card
-            <div>
+            <div className="tc">
                 <h1>Friendlist</h1>
-                <input type="search" placeholder="Search a friend"></input>
+                <Searchbox />
                 <Cardlist robots={robots}/>
             </div>
             
