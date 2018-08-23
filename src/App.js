@@ -8,9 +8,14 @@ import {robots} from './robots';          // The robots object for data
 class App extends Component {
     render() {
         return(
-            // return the div holding the full Cardlist 
+            // return the div holding a header, searchbar & the full Cardlist 
             // where every robot has its own Card
-            <Cardlist robots={robots}/>
+            <div>
+                <h1>Friendlist</h1>
+                <input type="search" placeholder="Search a friend"></input>
+                <Cardlist robots={robots}/>
+            </div>
+            
         )
     }
 }
