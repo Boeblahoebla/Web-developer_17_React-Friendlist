@@ -1,8 +1,8 @@
 // Imports
 //////////
-import React, { Component } from 'react';         // View library
-import Cardlist from './Cardlist'; // The full Cardlist
-import {robots} from './robots';   // The robots object for data
+import React, { Component } from 'react'; // View library
+import Cardlist from './Cardlist';        // The full Cardlist
+import {robots} from './robots';          // The robots object for data
 
 // this is the view for the whole app
 class App extends Component {
