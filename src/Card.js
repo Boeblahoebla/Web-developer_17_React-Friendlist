@@ -2,7 +2,6 @@
 //////////
 import React from 'react'; // View library
 import './css/card.css';   // Card CSS style
-import 'tachyons';         // CSS library
 
 // The component of a single Card: a div holding all the information about 1 robot
 const Card = (props) => {
